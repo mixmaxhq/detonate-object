@@ -204,4 +204,22 @@ describe('detonate-object', function() {
       [3, 5],
     ]);
   });
+
+  it('should recursively resolve masking', function() {
+    const val = {
+      $each: [{
+        $each: [{
+          property: 'deep'
+        }]
+      }, {
+        property: 'less-deep'
+      }],
+      property: {$each: ['shallow', 'also-shallow']}
+    };
+
+    expect(collected(val)).to.have.same.deep.members([
+      {property: 'deep'},
+      {property: 'less-deep'},
+    ]);
+  });
 });
