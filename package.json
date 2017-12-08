@@ -1,6 +1,6 @@
 {
   "name": "detonate-object",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Generate object copies combinatorially",
   "main": "index.js",
   "repository": "https://github.com/mixmaxhq/detonate-object",
@@ -15,7 +15,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "ci": "yarn check && yarn lint && yarn test"
   },
   "engines": {
     "node": ">=6"

@@ -1,6 +1,8 @@
 detonate-object
 ===============
 
+[![Build Status](https://travis-ci.org/mixmaxhq/detonate-object.svg?branch=master)](https://travis-ci.org/mixmaxhq/detonate-object)
+
 Generates objects from an object with `$each` declarations in a combinatorial manner.
 
 Has nothing to do with destroying objects.
