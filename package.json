@@ -1,0 +1,28 @@
+{
+  "name": "detonate-object",
+  "version": "0.1.0",
+  "description": "Generate object copies combinatorially",
+  "main": "index.js",
+  "repository": "https://github.com/mixmaxhq/detonate-object",
+  "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": ">=3",
+    "eslint-config-mixmax": "^0.10.0",
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "dependencies": {
+    "benchmark": "^2.1.4"
+  },
+  "files": [
+    "index.js"
+  ]
+}
