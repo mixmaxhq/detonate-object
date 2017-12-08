@@ -1,6 +1,6 @@
 {
   "name": "detonate-object",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate object copies combinatorially",
   "main": "index.js",
   "repository": "https://github.com/mixmaxhq/detonate-object",
