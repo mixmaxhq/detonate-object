@@ -7,6 +7,7 @@
   "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
   "license": "MIT",
   "devDependencies": {
+    "benchmark": "^2.1.4",
     "chai": "^4.1.2",
     "eslint": ">=3",
     "eslint-config-mixmax": "^0.10.0",
@@ -18,9 +19,6 @@
   },
   "engines": {
     "node": ">=6"
-  },
-  "dependencies": {
-    "benchmark": "^2.1.4"
   },
   "files": [
     "index.js"
