@@ -101,4 +101,4 @@ Array.from(detonate({
 // ]
 ```
 
-[naive]: https://github.com/mixmaxhq/detonate-object/blob/benchmarks/naive.js
+[naive]: https://github.com/mixmaxhq/detonate-object/blob/master/benchmarks/naive.js
