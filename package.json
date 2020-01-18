@@ -14,9 +14,9 @@
     "mocha": "^4.0.1"
   },
   "scripts": {
-    "test": "mocha",
+    "ci": "npm run lint && npm test",
     "lint": "eslint .",
-    "ci": "yarn check && yarn lint && yarn test"
+    "test": "mocha"
   },
   "engines": {
     "node": ">=6"
