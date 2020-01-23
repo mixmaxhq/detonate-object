@@ -7,11 +7,13 @@
   "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
   "license": "MIT",
   "devDependencies": {
+    "@mixmaxhq/prettier-config": "^1.0.0",
     "benchmark": "^2.1.4",
     "chai": "^4.1.2",
-    "eslint": ">=3",
-    "eslint-config-mixmax": "^0.10.0",
-    "mocha": "^4.0.1"
+    "eslint": "^6.8.0",
+    "eslint-config-mixmax": "^4.6.0",
+    "mocha": "^4.0.1",
+    "prettier": "^1.19.1"
   },
   "scripts": {
     "ci": "npm run lint && npm test",

@@ -12,47 +12,55 @@ function drain(iterable) {
 }
 
 suite.add('small w/naive', () => {
-  drain(naive({
-    a: {$each: [1, 2, 3, 4, 5]},
-    b: {$each: [1, 2, 3, 4, 5]},
-    c: {$each: [1, 2, 3, 4, 5]},
-    d: {$each: [1, 2, 3, 4, 5]},
-    e: {$each: [1, 2, 3, 4, 5]},
-  }));
+  drain(
+    naive({
+      a: { $each: [1, 2, 3, 4, 5] },
+      b: { $each: [1, 2, 3, 4, 5] },
+      c: { $each: [1, 2, 3, 4, 5] },
+      d: { $each: [1, 2, 3, 4, 5] },
+      e: { $each: [1, 2, 3, 4, 5] },
+    })
+  );
 });
 
 suite.add('small w/detonate', () => {
-  drain(detonate({
-    a: {$each: [1, 2, 3, 4, 5]},
-    b: {$each: [1, 2, 3, 4, 5]},
-    c: {$each: [1, 2, 3, 4, 5]},
-    d: {$each: [1, 2, 3, 4, 5]},
-    e: {$each: [1, 2, 3, 4, 5]},
-  }));
+  drain(
+    detonate({
+      a: { $each: [1, 2, 3, 4, 5] },
+      b: { $each: [1, 2, 3, 4, 5] },
+      c: { $each: [1, 2, 3, 4, 5] },
+      d: { $each: [1, 2, 3, 4, 5] },
+      e: { $each: [1, 2, 3, 4, 5] },
+    })
+  );
 });
 
 suite.add('large w/naive', () => {
-  drain(naive({
-    a: {$each: [1, 2, 3, 4, 5]},
-    b: {$each: [1, 2, 3, 4, 5]},
-    c: {$each: [1, 2, 3, 4, 5]},
-    d: {$each: [1, 2, 3, 4, 5]},
-    e: {$each: [1, 2, 3, 4, 5]},
-    f: {$each: [1, 2, 3, 4, 5]},
-    g: {$each: [1, 2, 3, 4, 5]},
-  }));
+  drain(
+    naive({
+      a: { $each: [1, 2, 3, 4, 5] },
+      b: { $each: [1, 2, 3, 4, 5] },
+      c: { $each: [1, 2, 3, 4, 5] },
+      d: { $each: [1, 2, 3, 4, 5] },
+      e: { $each: [1, 2, 3, 4, 5] },
+      f: { $each: [1, 2, 3, 4, 5] },
+      g: { $each: [1, 2, 3, 4, 5] },
+    })
+  );
 });
 
 suite.add('large w/detonate', () => {
-  drain(detonate({
-    a: {$each: [1, 2, 3, 4, 5]},
-    b: {$each: [1, 2, 3, 4, 5]},
-    c: {$each: [1, 2, 3, 4, 5]},
-    d: {$each: [1, 2, 3, 4, 5]},
-    e: {$each: [1, 2, 3, 4, 5]},
-    f: {$each: [1, 2, 3, 4, 5]},
-    g: {$each: [1, 2, 3, 4, 5]},
-  }));
+  drain(
+    detonate({
+      a: { $each: [1, 2, 3, 4, 5] },
+      b: { $each: [1, 2, 3, 4, 5] },
+      c: { $each: [1, 2, 3, 4, 5] },
+      d: { $each: [1, 2, 3, 4, 5] },
+      e: { $each: [1, 2, 3, 4, 5] },
+      f: { $each: [1, 2, 3, 4, 5] },
+      g: { $each: [1, 2, 3, 4, 5] },
+    })
+  );
 });
 
 suite.on('cycle', (event) => {
