@@ -2,8 +2,9 @@ const sentinel = Object.create(null);
 const hasOwn = Object.prototype.hasOwnProperty;
 const toString = Object.prototype.toString;
 
-const specialTypes = new Set(['Arguments', 'Function', 'Number', 'Date', 'RegExp']
-  .map((type) => `[object ${type}]`));
+const specialTypes = new Set(
+  ['Arguments', 'Function', 'Number', 'Date', 'RegExp'].map((type) => `[object ${type}]`)
+);
 
 /**
  * Check if the given object is a special type of primitive that we should
@@ -147,7 +148,7 @@ function* expander(object) {
     }
 
     // Merge the object back together, and expand it.
-    const obj = Object.assign({}, object, {$each: sentinel}, option);
+    const obj = Object.assign({}, object, { $each: sentinel }, option);
     if (obj.$each === sentinel) {
       delete obj.$each;
     }

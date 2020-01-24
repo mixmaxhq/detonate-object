@@ -2,15 +2,16 @@ const sentinel = Object.create(null);
 const hasOwn = Object.prototype.hasOwnProperty;
 const toString = Object.prototype.toString;
 
-const specialTypes = new Set(['Arguments', 'Function', 'Number', 'Date', 'RegExp']
-  .map((type) => `[object ${type}]`));
+const specialTypes = new Set(
+  ['Arguments', 'Function', 'Number', 'Date', 'RegExp'].map((type) => `[object ${type}]`)
+);
 
 function isRealObject(object) {
   return typeof object === 'object' && !specialTypes.has(toString.call(object));
 }
 
 function* detonate(object) {
-  for (let i = 0;; ++i) {
+  for (let i = 0; ; ++i) {
     const obj = detonateAt(object, i);
     if (obj === sentinel) return;
     yield obj;
@@ -18,7 +19,7 @@ function* detonate(object) {
 }
 
 function detonateAt(object, index) {
-  const box = {value: index};
+  const box = { value: index };
   const result = expandInner(object, box);
   return box.value > 0 ? sentinel : result;
 }
